@@ -32,7 +32,46 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.cards {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: space-around;
+  padding: 0%;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+}
 
+ul {
+  list-style: none;
+  padding: 1em;
+}
+
+li {
+  margin-block: 0.5em;
+  padding: 1em;
+}
+
+.left {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 1em 2em;
+  min-width: 300px;
+}
+
+.right {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 1em 2em;
+  min-width: 300px;
+}
+
+.emptylist {
+  background-color: blanchedalmond;
+  margin-top: 2.6rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  opacity: 0.8;
+}
 
 
 #app {
@@ -40,4 +79,14 @@ button {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+
+.todo input {
+  background-color: white;
+  min-width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
