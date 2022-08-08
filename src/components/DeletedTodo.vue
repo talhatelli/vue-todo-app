@@ -6,10 +6,9 @@ const props = defineProps({
 </script>
 
 <template>
-
   <div class="deleted">
     {{ props.deleted }}
-    <h1>Deleted</h1>
+    <p style="font-size:30px">Deleted </p>
     <ul>
       <li v-for="data in props.items" :key="data.id">
         {{ data.name }}

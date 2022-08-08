@@ -63,6 +63,12 @@ li {
   padding: 1em 2em;
   min-width: 300px;
 }
+.deleted{
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+
+}
 
 .emptylist {
   background-color: blanchedalmond;

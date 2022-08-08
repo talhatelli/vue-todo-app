@@ -27,20 +27,20 @@ const uncompleted = computed(() => {
   return state.items.filter((item) => item.completed && !item.deleted);
 });
 
-console.log("done", noDone);
-console.log("completed", uncompleted);
+//console.log("done", noDone);
+//console.log("completed", uncompleted);
 
 const deleted = computed(() => {
   return state.items.filter((item) => item.deleted);
 });
 
-const onComeAhmet = (info) => {
-  alert(info)
-}
+// const onComeAhmet = (info) => {
+//   alert(info)
+// }
 </script>
 
 <template>
-  <TitleTodo @add-todo="addTodo" @ahmet="onComeAhmet" />
+  <TitleTodo @add-todo="addTodo" /> <!-- @ahmet="onComeAhmet" -->
   <div class="cards">
     <TodoList :shipment="noDone" />
     <CompletedTodo :middleman="uncompleted" />

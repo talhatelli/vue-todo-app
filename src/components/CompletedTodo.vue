@@ -13,5 +13,6 @@ const props = defineProps({
                 <button @click="data.deleted = true"> Delete</button>
             </li>
         </ul>
+        <p class="emptylist" v-else>come on bro, throw me what's been done.</p>
     </div>
 </template>
